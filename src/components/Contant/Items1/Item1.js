@@ -27,7 +27,7 @@ const Items1 =(props)=>{
                         if((ele.category.name).toLowerCase() ===(props.name).toLowerCase() ){
                             return(
                                 <div className="item" key={id}>
-                                    <img src={ele.images[1]} />
+                                    <img src={ele.images[0] || ele.images[1]} />
                                     <p className="discribe">{ele.title}</p>
                                     <p className="price">Price: {ele.price}$ </p>
                                     {
